@@ -5,22 +5,16 @@ import './App.css';
 
 class App extends React.Component {
   state = {
-    userInfo: []
+    userInfo: {}
   }
 
   componentDidMount() {
     axios.get(`https://api.github.com/users/krsnyder`)
       .then(res => {
-        this.setState({
-          userInfo: res.data
-        })
+        this.setState({ userInfo: res.data })
       })
-      .then(() => console.log(this.state.userInfo))
       .catch(err => console.log(err))
   }
-
-
-
 
 
   render() {
