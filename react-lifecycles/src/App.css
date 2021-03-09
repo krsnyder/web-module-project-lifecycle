@@ -21,7 +21,7 @@ h1{
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 2vw;
 }
 .user-card {
@@ -31,13 +31,37 @@ h2 {
   border: 3px solid f8f1f1;
   border-radius: 5px;
   border: 5px solid #f8f1f1;
+  width: 70vw;
+  margin: 2vw auto;
+}
+
+.follow-card {
+  display: flex;
+  justify-content:first baseline;
+  align-items: center;
+  border: 3px solid f8f1f1;
+  border-radius: 5px;
+  border: 5px solid #f8f1f1;
   width: auto;
-  margin: auto;
+  margin: 2vw auto;
 }
 
 .user-image img{
   border: 5px solid #f8f1f1;
   border-radius: 50%;
+  margin: 2vw;
+  width: 25rem;
+}
+
+.follow-image img{ 
+  border: 5px solid #f8f1f1;
+  border-radius: 50%;
+  margin: 1vw;
+  width: 15vw;
+}
+
+.follower-name {
+  font-size: 2rem;
 }
 
 .user-details {
@@ -45,11 +69,11 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 20vw;
+  /* width: 10vw; */
 }
 
 p {
   margin: 0.5vw;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }

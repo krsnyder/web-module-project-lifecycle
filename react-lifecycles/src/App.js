@@ -31,7 +31,7 @@ class App extends React.Component {
       <div className="App">
         <h1>Module 2 Project</h1>
         <UserCard userDetails={this.state.userInfo} />
-        <h2>This is who I follow: </h2>
+        <h2>Noone follows me :( <br></br>But this is who I follow! </h2>
         <Followers followers={this.state.followers} />
       </div>
     )
