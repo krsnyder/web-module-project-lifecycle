@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function Followers({followers}) {
 
+  // console.log(followers)
   return (
     <div>
       {followers.map(follower => {

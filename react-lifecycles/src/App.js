@@ -7,23 +7,25 @@ import './App.css';
 class App extends React.Component {
   state = {
     userInfo: {},
-    followers: {}
+    followers: []
   }
 
   componentDidMount() {
     axios.get(`https://api.github.com/users/krsnyder`)
       .then(res => {
-        this.setState({ userInfo: res.data })
+        this.setState({...this.state, userInfo: res.data })
       })
       .catch(err => console.log(err))
     
     axios.get('https://api.github.com/users/krsnyder/following')
       .then(res => {
-        this.setState({ followers: res.data })
+        this.setState({...this.state, followers: res.data })
       })
       .catch(err => console.log(err))
+    
   }
 
+  
   render() {
     return (
       <div className="App">
